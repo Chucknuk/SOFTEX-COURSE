@@ -1,0 +1,41 @@
+ 
+
+Em uma inscrição, o usuário informou os seguintes dados:
+
+- Nome: José Almeida da Silva
+- CPF: 12345678900
+- RG: 9517530
+- Altura: 1,78
+- Endereço: Rua A, 380 – Centro – Recife/PE
+
+No algoritmo, descreva como será:
+1. A proposta das variáveis;
+2. Elaborada a declaração das variáveis;
+3. Utilizado o comando de atribuição.
+
+
+
+
+1 - VARIAVEIS USADAS
+
+NOME
+CPF
+RG
+ALTURA
+ENDEREÇO
+
+2 - 
+
+NOME CARACTERES;
+CPF INTEIRO;
+RG INTEIRO;
+ALTURA REAIS;
+ENDEREÇO CARACTERES;
+
+3 -
+
+NOME <- JOSÉ ALMEIDA DA SILVA
+CPF <- 1234567890
+RG <- 9517530
+ALTURA <- 1,78
+ENDEREÇO <- RUA A, 380 - CENTRO - RECIFE/PE

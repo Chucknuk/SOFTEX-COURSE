@@ -1,0 +1,124 @@
+RESPOSTA 1:CARACTERE
+RESPOSTA 2:CARACTERE
+RESPOSTA 3 :CARACTERE
+RESPOSTA 4 :CARACTERE
+RESPOSTA 5:CARACTERE
+RESPOSTA 6:CARACTERE
+RESPOSTA 7:CARACTERE
+
+ 
+Inicio
+escreva("Escolha um meio de transporte e responda as perguntas a seguir com S ou N \n")
+escreva("O meio de transporte que você está pensando é terrestre?\n")
+leia(resposta1)
+se(resposta1=="S")entao{
+    escreva("Cabe apenas uma pessoa?\n")
+    leia(resposta2)
+    se(resposta2 =="S")entao{
+        escreva("Você escolheu bicicleta")
+        fimse
+    }
+    senao{
+        escreva("Cabe até cinco pessoas?\n")
+        leia(resposta3)
+        se(resposta3 == "S")entao{
+            escreva("Você escolheu carro")
+            fimse
+        }
+        senao{
+            escreva("Pode ser usado para arar a terra?\n")
+            leia(resposta4)
+            se(resposta4 == "S")entao{
+                escreva("Você escolheu trator")
+                fimse
+            }
+            senao{
+                escreva("O meio de transporte que você escolheu tem apenas duas rodas?\n")
+                leia(resposta5)
+                se(resposta5 == "S")entao{
+                    escreva("Você escolheu moto")
+                    fimse
+                }
+                senao{
+                    escreva("O escolhido por você pode utilizar carvão como combustível?\n")
+                    leia(resposta6)
+                    se(resposta6 == "S")entao{
+                        escreva("Você escolheu trem")
+                        fimse
+                    }
+                    senao{
+                        escreva("O meio de transporte escolhido pode ser usado para transporte de passageiros?\n")
+                        leia(resposta7)
+                        se(resposta7 == "S")entao{
+                            escreva("Você escolheu ônibus")
+                            fimse
+                        }
+                        senao{
+                            escreva("Você escolheu caminhão")
+                            fimse
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+senao{
+    escreva("O meio de transporte escolhido é aéreo?")
+    leia(resposta2)
+    se(resposta2 == "S")entao{
+	    escreva("Cabe apenas uma pessoa?\n")
+        leia(resposta3)
+        se(resposta3 == "S")entao{
+            escreva("Você escolheu paraquedas")
+            fimse
+        }
+        senao{
+            escreva("O meio de transporte escolhido possuí hélice?\n")
+            leia(resposta4)
+            se(resposta4 == "N")entao{
+                escreva("Você escolheu balão")
+                fimse
+            }
+            senao{
+                escreva("O meio de transporte escolhido tem comissários de bordo?\n")
+                leia(resposta5)
+                se(resposta5 == "S")entao{
+                    escreva("Você escolheu avião")
+                    fimse
+                }
+                senao{
+                    escreva("Você escolheu helicóptero")
+                }
+            }
+          }
+    }
+    senao{
+        escreva("O meio de transporte escolhido pode navegar no fundo do mar?\n")
+        leia(resposta3)
+        se(resposta3 == "S")entao{
+            escreva("Você escolheu submarino")
+            fimse
+        }
+        senao{
+            escreva("O meio de transporte escolhido pode ter piscina?\n")
+            leia(resposta4)
+            se(resposta4 == "S")entao{
+                escreva("Você escolheu navio")
+                fimse
+            }
+            senao{
+                escreva("O que vocÊ pensou pode carregar mais de 100 pessoas?\n")
+                leia(resposta5)
+                se(resposta5 == "S")entao{
+                    escreva("Você escolheu barco")
+                    fimse
+                }
+                senao{
+                    escreva("Você escolheu lancha")
+                }
+            }
+        }
+
+    }
+}

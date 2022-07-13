@@ -1,0 +1,122 @@
+ATVD 6
+
+
+ 
+i = 1						 (vai de 1 a 100)
+maior_nota_A = 0
+maior_nota_B = 0
+maior_nota_C = 0
+maior_nota_D = 0
+aprovado_A = 0 
+aprovado_B = 0
+aprovado_C = 0
+aprovado_D = 0
+aprovados_totais = 0
+aluno_maior_nota = ” “
+maior_nota_escola = 0
+turma_maior_nota = “ “
+
+# FAZEMOS OS CADASTROS DOS NOMES E NOTAS DE TODOS OS ALUNOS
+#Fazendo a iteração para a turma A
+ENQUANTO (i <26) FACA				
+Escreval (“informe o nome do aluno:”)
+Leia (nome)
+Escreval (“informe a nota do aluno:”)
+Leia(nota)
+SE (nota >= 7) ENTAO
+	aprovado_A = aprovado_A + 1			
+SE (nota > maior_nota_A) ENTAO
+	Maior_nota_A = nota				
+SE (nota > maior_nota_escola) ENTAO
+	Maior_nota_escola = nota			
+	Aluno_maior_nota = nome		
+	turma_maior_nota = turma	
+Escreva(“informe a sua turma”)
+Leia(turma)
+i = i + 1							
+#Fazendo a iteração para a turma B (aqui o contador estará com o valor 26)
+ENQUANTO (i <51) FACA				
+Escreval (“informe o nome do aluno:”)
+Leia (nome)
+Escreval (“informe a nota do aluno:”)
+Leia(nota)
+SE (nota >= 7) ENTAO
+	aprovado_B = aprovado_B + 1			
+SE (nota > maior_nota_B) ENTAO
+	Maior_nota_B = nota				
+SE (nota > maior_nota_escola) ENTAO
+	Maior_nota_escola = nota			
+	Aluno_maior_nota = nome		
+turma_maior_nota = turma	
+Escreval(“informe a sua turma”)
+Leia(turma)
+i = i + 1							
+
+#Fazendo a iteração para a turma C (aqui o contador estará com o valor 51)
+
+ENQUANTO (i <76) FACA				
+Escreval (“informe o nome do aluno:”)
+Leia (nome)
+Escreval (“informe a nota do aluno:”)
+Leia(nota)
+SE (nota >= 7) ENTAO
+	aprovado_C = aprovado_C + 1			
+SE (nota > maior_nota_C) ENTAO
+	Maior_nota_C = nota				
+SE (nota > maior_nota_escola) ENTAO
+	Maior_nota_escola = nota			
+	Aluno_maior_nota = nome		
+	turma_maior_nota = turma	
+Escreval(“informe a sua turma”)
+Leia(turma)
+i = i + 1							
+
+#Fazendo a iteração para a turma D (aqui o contador estará com o valor 76)
+
+ENQUANTO (i <76) FACA				
+Escreval (“informe o nome do aluno:”)
+Leia (nome)
+Escreval (“informe a nota do aluno:”)
+Leia(nota)
+SE (nota >= 7) ENTAO
+	aprovado_D = aprovado_D + 1			
+SE (nota > maior_nota_A) ENTAO
+	Maior_nota_D = nota				
+SE (nota > maior_nota_escola) ENTAO
+	Maior_nota_escola = nota			
+	Aluno_maior_nota = nome		
+	turma_maior_nota = turma	
+Escreval(“informe a sua turma”)
+Leia(turma)
+i = i + 1							
+
+# APRESENTANDO OS RESULTADOS
+# resultados por turma
+Escreval (“Número de alunos aprovados na turma A:”)
+Escreval (aprovado_A)
+Escreval (“A maior nota da turma A foi:”)
+Escreval(maior_nota_A)
+
+Escreval (“Número de alunos aprovados na turma B:”)
+Escreval (aprovado_B)
+Escreval (“A maior nota da turma B foi:”)
+Escreval(maior_nota_B)
+
+Escreval (“Número de alunos aprovados na turma C:”)
+Escreval (aprovado_C)
+Escreval (“A maior nota da turma C foi:”)
+Escreva(maior_nota_C)
+
+Escreval (“Número de alunos aprovados na turma D:”)
+Escreval (aprovado_D)
+Escreval (“A maior nota da turma D foi:”)
+Escreva(maior_nota_D)
+
+# identificação do melhor aluno
+Escreval (“O aluno de maior nota foi:”)
+Escreval (aluno_maior_nota)
+Escreval (“O nome do aluno de maior nota é:”)
+Escreval(maior_nota_escola)
+Escreval (“A turma do aluno de maior nota é:”)
+Escreval(turma_maior_nota)
+

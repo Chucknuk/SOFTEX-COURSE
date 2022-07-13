@@ -1,0 +1,23 @@
+Pesquise sobre os grafos e apresente dois exemplos de como são utilizados no contexto tecnológico.
+
+
+Grafos
+A teoria dos grafos é um ramo da matemática que estuda as relações entre os objetos de um determinado conjunto. Para tal são empregadas estruturas chamadas de grafos, G(V,A), onde V é um conjunto não vazio de objetos denominados vértices e A é um conjunto de pares não ordenados de V, chamado arestas.
+O conjunto dos vértices pode ser infinito, onde nesse caso, chama-se de grafo infinito. Quando existe mais de uma aresta entre o mesmo par de vértices, temos arestas múltiplas e, quando temos uma aresta definida por um par de vértices não distintos (ou seja, uma aresta que conecta no mesmo nó), diz-se um laço.
+
+Tipos de grafos
+Grafo simples é um grafo não direcionado, sem laços e que existe no máximo uma aresta entre quaisquer dois vértices (sem arestas paralelas). No grafo de exemplo, (1, 2, 5, 1, 2, 3) é um caminho com comprimento 5, e (5, 2, 1) é um caminho simples de comprimento 2.
+ 	Grafo completo é o grafo simples em que, para cada vértice do grafo, existe uma aresta conectando este vértice a cada um dos demais. Ou    seja, todos os vértices do grafo possuem o mesmo grau. O grafo completo de n vértices é frequentemente denotado porKn. Ele tem n(n-1)/2 arestas (correspondendo a todas as possíveis escolhas de pares de vértices).
+
+Grafo nulo é o grafo cujo conjunto de vértices é vazio.
+Grafo vazio é o grafo cujo conjunto de arestas é vazio.
+Grafo trivial é o grafo que possui apenas um vértice e nenhuma aresta.
+Grafo regular é um grafo em que todos os vértices têm o mesmo grau.
+Multigrafo é um grafo que permite múltiplas arestas ligando os mesmos vértices (arestas paralelas).
+Laço (loop) num grafo ou num digrafo é uma aresta e em E cujas terminações estão no mesmo vértice.
+Pseudografo é um grafo que contém arestas paralelas e laços.
+ 
+Como são utilizados no contexto tecnológico.
+
+Em redes sociais.
+Em bancos de dados.

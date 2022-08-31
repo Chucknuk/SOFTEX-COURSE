@@ -1,0 +1,25 @@
+#SOLICITANDO AS ENTRADAS
+rodas = float(input("Insira a quantidade de rodas do veículo:"))
+peso_bruto = float(input("Insira o peso bruto do veículo, em quilogramas:"))
+ocupacao = float(input("Insira a quantidade de pessoas no veículo:"))
+categoria = ""
+ 
+#CONDICIONAIS
+if rodas==2 or rodas==3:
+  categoria = "A"
+ 
+if rodas==4 and peso_bruto<=3500 and ocupacao<8:
+  categoria = "B"
+ 
+if rodas >= 4 and peso_bruto > 3500 and peso_bruto <= 6000:
+  categoria = "C" 
+ 
+if rodas >= 4 and ocupacao > 8:
+  categoria = "D" 
+ 
+if rodas >= 4 and peso_bruto > 6000:
+  categoria = "E" 
+ 
+#IMPRESSÕES AO USUÁRIO
+print("A categoria de habilitação necessária para o veículo informado é a categoria:")
+print(categoria)

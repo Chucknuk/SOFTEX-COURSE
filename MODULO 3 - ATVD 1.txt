@@ -1,0 +1,16 @@
+
+
+#PEDIR AS ENTRADAS
+nome = input("Insira o nome do aluno:")
+nota1 = float(input("Insira a primeira nota do aluno:"))
+nota2 = float(input("Insira a segunda nota do aluno:"))
+faltas = float(input("Insira a quantidade de faltas que o aluno teve:"))
+ 
+#CONDICIONAIS
+media = (nota1 + nota2) / 2
+ 
+if media < 7 or faltas > 3:       #condições para reprovação
+  print("O aluno " + nome + " está reprovado! Tente de novo e nunca desista!")
+ 
+else:
+  print("O aluno " + nome + " está aprovado! Continue e busque sempre melhorar!")   #se não está reprovado, está aprovado rs

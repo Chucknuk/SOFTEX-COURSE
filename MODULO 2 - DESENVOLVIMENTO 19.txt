@@ -1,0 +1,81 @@
+#DECLARANDO CONTADORES
+cand_X = 0
+cand_Y = 0
+cand_Z = 0
+branco = 0
+nulo = 0
+vencedor = ""
+ 
+#MOSTRANDO AS OPÇÕES DE VOTO
+ 
+print("Informe o número do seu candidato para computar o voto nele. Para um voto 'branco', insira o código 0")
+print("Candidato X => 889")
+print("Candidato Y => 847")
+print("Candidato Z => 515")
+print("BRANCO => 0")     
+ 
+#REQUISITANDO ENTRADA DE DADOS AO USUÁRIO
+while True:
+  try:
+    voto = int(input("Insira o número do seu candidato e pressione ENTER:"))
+ 
+    if (voto == 889):           #votando no candidato X
+      cand_X = cand_X + 1
+      continue
+ 
+    elif (voto == 847):         #votando no candidato Y
+      cand_Y = cand_Y + 1
+      continue
+ 
+    elif (voto == 515):         #votando no candidato Z
+      cand_Z = cand_Z + 1
+      continue
+ 
+    elif (voto ==0):
+      branco = branco + 1
+      nulo = nulo + 1
+      continue
+ 
+    elif (voto == 189545011004):     #aqui criei uma senha para que o operador da seção encerre a seção.Essa senha,claro, não é exposta aos votantes. Foi a maneira que pensei para que houvesse término do programa.
+      break                          #programa encerra com a inserção do código de encerramento
+ 
+    else:                       #caso nenhum dos números seja digitado, contabiliza-se nulo
+      nulo = nulo + 1
+      continue
+ 
+  except:
+    print("Não foi digitado um número! Vote novamente!")
+    continue
+  break
+ 
+#CALCULANDO ESTATÍSTICAS DE VOTOS
+votos_totais = cand_X + cand_Y + cand_Z + nulo
+votos_validos = cand_X + cand_Y + cand_Z
+porcent_validos = (votos_validos/votos_totais)*100
+porcent_nulo = (nulo/votos_totais)*100
+porcent_X = (cand_X/votos_validos)*100
+porcent_Y = (cand_Y/votos_validos)*100
+porcent_Z = (cand_Z/votos_validos)*100
+ 
+#declarando o vencedor
+if cand_Y>=cand_X and cand_Y>=cand_Z:
+  vencedor = "Candidato Y"
+elif cand_Z>=cand_X and cand_Z>=cand_X:
+  vencedor = "Candidato Z"
+else:
+  vencedor = "Candidato X"
+ 
+#MOSTRANDO AS ESTATÍSTICAS AO TÉRMINO DA SEÇÃO
+print("A eleição recebeu " + str(votos_totais) + " votos totais, sendo " + str(votos_validos) + " votos válidos.")
+print("A eleição recebeu " + str(branco) + " votos em branco e contabilizou " + str(nulo) + " votos nulos.")
+print("A porcentagem de votos válidos foi de " + str(porcent_validos) + "% e a de votos nulos " + str(porcent_nulo) + "%.")
+ 
+print("O candidato X recebeu " + str(cand_X) + " votos válidos.")
+print("Este candidato teve " + str(porcent_X) + "% dos votos válidos.")
+print("O candidato Y recebeu " + str(cand_Y) + " votos válidos.")
+print("Este candidato teve " + str(porcent_Y) + "% dos votos válidos.")
+print("O candidato Z recebeu " + str(cand_Z) + " votos válidos.")
+print("Este candidato teve " + str(porcent_Z) + "% dos votos válidos.")
+ 
+print("O candidato vencedor é o " + str(vencedor) + "!")
+

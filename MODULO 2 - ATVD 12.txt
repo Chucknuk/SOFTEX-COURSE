@@ -1,0 +1,38 @@
+#DEFININDO A FUNÇÃO
+def calculadora( a , b , c):
+  n1 = float(a)
+  n2 = float(b)
+ 
+  if c==1:
+    operacao = "SOMA"
+    res = n1 + n2
+    print("Você escolheu a operação de " + operacao + " e o resultado da operação é " + str(res))
+  
+  elif c==2:
+    operacao = "SUBTRAÇÃO"
+    res = n1 - n2
+    print("Você escolheu a operação de " + operacao + " e o resultado da operação é " + str(res))
+ 
+  elif c==3:
+    operacao = "MULTIPLICAÇÃO"
+    res = n1 * n2
+    print("Você escolheu a operação de " + operacao + " e o resultado da operação é " + str(res))
+ 
+  elif c==4:
+    operacao = "DIVISÃO"
+    res = n1 / n2
+    print("Você escolheu a operação de " + operacao + " e o resultado da operação é " + str(res))
+ 
+  else:
+    res=0
+ 
+    print("Você digitou um número que não corresponde a nenhuma operação!")
+    print(res)
+ 
+ 
+ 
+  # TESTANDO A FUNÇÃO
+ 
+calculadora(2,4,3)
+Você escolheu a operação de MULTIPLICAÇÃO e o resultado da operação é 8.0
+

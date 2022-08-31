@@ -1,0 +1,28 @@
+
+# PROGRAMA 1 - Programa simples que retorna a frase em caixa alta
+ 
+frase = input("Insira uma frase qualquer aqui:")
+frase_maiusc = frase.upper()
+print(frase_maiusc)
+ 
+# PROGRAMA 2 - Programa para identificar a posição que se encontra o caracter dentro da variável
+# Para deixar o programa interessante, suponhamos que o caracter "ç" não seja permitido como entrada
+# em algum programa ou função. Assim, verificaremos se a frase inserida tem esse caracter.
+ 
+frase = input("Insira uma frase qualquer aqui:")
+if "ç" in frase:
+  pos = frase.find("ç")
+  print("Opa! Identificamos o caracter 'ç' em sua frase. Como o programa não aceita essa inserção, troque por 'c' comum.")
+  print(" O 'ç' está na posição ", pos)
+else:
+  print("Sem caracteres problemáticos na inserção. Tudo certo")
+ 
+# PROGRAMA 3 - Programa simples testando o comprimento do link a ser inserido como entrada.
+# Aqui, esse programa pode ser utilizado como já usamos no link dos projetos de
+# desenvolvimento, avisando quando o link é extenso (por sinal, aceitem links maiores rs)
+ 
+link = input("Insira aqui o link do seu código:")
+if len(link)>100:
+  print ("O link inserido possui mais de 100 caracteres. Favor usar um encurtador de links")
+else:
+  print("Link de tamanho aceito. Apenas verifique se o compartilhamento está ativado. :) ")

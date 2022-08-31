@@ -1,0 +1,30 @@
+#LENDO O ARQUIVO E VISUALIZANDO PARA VERIFICAR
+import pandas as pd
+ 
+df = pd.read_csv("notas_alunos.csv")
+ 
+print(df.head())
+ 
+#CRIANDO COLUNAS MEDIA E SITUAÇÃO
+#criando coluna com média
+media = (df["nota_1"] + df["nota_2"]) / 2
+df["média das notas"] = media
+print(df.head())
+ 
+#criando coluna com situação
+df.loc[((df["média das notas"] >=7) & (df["faltas"] <= 4)), "situação"] = "APROVADO"
+df.loc[((df["média das notas"] <7) | (df["faltas"] > 4)), "situação"] = "REPROVADO"
+ 
+print(df.head())
+ 
+#SALVANDO O ARQUIVO EM CSV
+df.to_csv()    #caminho do salvamento
+ 
+#IMPRIMINDO MAIOR NÚMERO DE FALTAS, MÉDIA DA TURMA E MAIOR MÉDIA
+maior_faltas = df["faltas"].max()
+media_turma = df["média das notas"].median()
+maior_media = df["média das notas"].max()
+ 
+print("Maior número de faltas: " + str(maior_faltas))
+print("Média da turma: " + str(media_turma))
+print("Maior média de aluno: " + str(maior_media))

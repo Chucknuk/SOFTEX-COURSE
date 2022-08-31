@@ -1,0 +1,25 @@
+package	Empresa.funcionarios;
+public class	Registro {
+	// atributos e métodos
+}
+
+package	Empresa.funcionarios;
+public class	Salarios {
+	// atributos e métodos
+}
+
+package	Empresa.funcionarios;
+public class	Exames_admissao {
+	// atributos e métodos
+}
+
+package	Empresa.Cliente;
+public class	Registro {
+	// atributos e métodos
+}
+
+
+package	Empresa.Cliente;
+public class	Proposta_Servico {
+	// atributos e métodos
+}

@@ -1,0 +1,24 @@
+# ENTRADA DE DADOS
+print("Informe o seu nome:")
+nome = input()
+ 
+while True:
+  try:
+    while True:   #como o programa deve voltar a pedir o ano de nascimento, o "while True" deve estar aqui
+      print("Informe o ano de seu nascimento:")
+      ano = int(input()) 
+      if (ano>=1922) and (ano<2022):
+        idade = 2022 - ano
+        print("Você completou ou completará " + str(idade) + " anos em 2022.")
+        break         #fazendo o programa encerrar com a missão cumprida
+        
+        
+      else:
+        print("Não foi digitado um ano válido! Favor entrar com um número entre 1922 e 2021")
+        continue      #fazendo o programa voltar ao início
+      break  
+ 
+  except:             #fazendo o programa voltar ao início
+    print("Não foi digitado um número!")
+    continue
+break

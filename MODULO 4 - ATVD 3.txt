@@ -1,0 +1,69 @@
+#USANDO PYTHON
+class pessoa:
+ 
+  def __init__(self,nome,idade,altura):     # 3 atributos da classe
+    self.__nome = nome
+    self.__idade = idade
+    self.__altura = altura
+  
+  def nomeGet(self):                          # definido os getters
+    return self.__nome
+  def idadeGet(self):
+    return self.__idade
+  def alturaGet(self):
+    return self.__altura
+ 
+  def nomeSet(self,nome):                    # definindo os setters
+    self.__nome = nome
+  def idadeSet(self,idade):
+    self.__idade = idade
+  def alturaSet(self,altura):
+    self.__altura = altura
+ 
+pessoa_01 = pessoa("Juliano", 28, 1.71)
+ 
+#USANDO PSEUDOLINGUAGEM, TAL COMO NO VÍDEO DA AULA
+classe pessoa:
+ 
+#get, set e construtor para a variavel IDADE
+ 
+  metodo construtor()           #declarando o metodo construtor para inserir condição na variavel
+  privado idade: inteiro        #criando a variavel idade
+      publico metodo setidade(inteiro NovaIdade)   #set para idade
+      se (NovaIdade >=0 && NovaIdade <= 120)
+      NovaIdade = idade
+      senão
+        escreva("Idade incorreta! Insira um número entre 0 e 120")
+      fimse
+      fimmetodo
+    fimmetodo
+ 
+  publico metodo getidade()     #get para idade
+    retorne idade               
+    fimmetodo
+ 
+#get e set para a variavel NOME
+ 
+  privado nome: caractere        #criando a variavel nome
+    publico metodo setnome(caractere NovoNome)   #set para nome
+      nome = NovoNome
+      fimmetodo
+ 
+    
+#get, set e construtor para a variavel ALTURA
+ 
+  metodo construtor()           #declarando o metodo construtor para inserir condição na variavel
+  privado altura: float        #criando a variavel altura
+      publico metodo setaltura(inteiro NovaAltura)   #set para altura
+      se (NovaAltura >=0 && NovaAltura <= 2.30)
+      NovaAltura = altura
+        senão
+        escreva("Altura incorreta! Insira um número entre 0 e 2.30")
+      fimse
+      fimmetodo
+    fimmetodo
+ 
+  publico metodo getidade()     #get para altura
+    retorne altura               
+    fimmetodo
+

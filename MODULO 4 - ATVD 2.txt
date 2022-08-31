@@ -1,0 +1,90 @@
+#CRIANDO A CLASSE
+ 
+class Pessoa_Softex:
+  
+  total_alunos = 0        
+    
+  def __init__(self, nome, idade, CPF, cor, genero):   
+    self.nome = nome
+    self.idade = idade
+    self.CPF = CPF
+    self.cor = cor
+    self.genero = genero
+ 
+  def anda(self):             
+   print(self.nome + " estou andando")
+ 
+  def corre(self):
+   print(self.nome + " estou correndo")
+ 
+  def fala(self):
+   print(self.nome + " estou falando")
+ 
+  def come(self):
+   print(self.nome + " estou comendo")
+ 
+  @staticmethod          
+  def registrar():
+   Pessoa_Softex.total_alunos = Pessoa_Softex.total_alunos + 1
+  
+  def mostrar_total(self):
+    print(Pessoa_Softex.total_alunos)
+    
+  def mostrar(self):
+   print("nome: " + self.nome)
+   print("idade: " + str(self.idade))
+   print("CPF: " + self.CPF)
+   print("cor: " + self.cor)
+   print("Gênero: " +self.genero)
+  
+ 
+#TESTANDO OBJETOS
+#OBJETO 1
+aluno_01 = Pessoa_Softex("Juliano", 28, "06104488479", "branca", "masculino")
+aluno_01.mostrar()
+aluno_01.registrar()      #registrando o aluno
+aluno_01.mostrar_total()  #imprimindo o total de alunos registrados até o momento   
+ 
+#OBJETO 2
+aluno_02 = Pessoa_Softex("Isabel", 26, "123456789", "branca", "feminino")
+aluno_02.mostrar()
+aluno_02.registrar()      #registrando o aluno
+aluno_02.mostrar_total()  #imprimindo o total de alunos registrados até o momento   
+ 
+#OBJETO 3
+aluno_03 = Pessoa_Softex("Matheus", 30, "242312312365", "branca", "masculino")
+aluno_03.mostrar()
+aluno_03.registrar()      #registrando o aluno
+aluno_03.mostrar_total()  #imprimindo o total de alunos registrados até o momento   
+ 
+#TESTANDO A VARIÁVEL ESTÁTICA, QUE DEVE RESULTAR EM 3 PARA OS 3 OBJETOS AGORA
+aluno_01.mostrar_total()
+aluno_02.mostrar_total()
+aluno_03.mostrar_total()
+
+
+EXIBINDO O RESULTADO DO CÓDIGO
+nome: Julia
+idade: 18
+CPF: 06104488488
+cor: parda
+Gênero: feminino
+1
+
+nome: Isabela
+idade: 29
+CPF: 123456781
+cor: branca
+Gênero: feminino
+2
+
+nome: Joao
+idade: 27
+CPF: 203929039
+cor: negra
+Gênero: masculino
+3
+
+3
+3
+3

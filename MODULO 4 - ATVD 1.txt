@@ -1,0 +1,107 @@
+BJETOS MATERIAIS:
+
+1 – GATO FELIX
+	ATRIBUTOS:
+		- Altura: 30 cm
+		- Comprimento: 70cm
+		- Cor: preto
+		- Peso: 15kg
+		- Nome: Felix
+		- Pelo : curto
+		- Raça: bombain
+
+	MÉTODOS:
+		- Andar
+		- Correr
+		- Sentar
+		- Deitar
+		- Dormir
+		- Comer
+		- Beber
+		- Urinar
+		- Defecar
+		- Miar
+		- Arranhar
+
+
+
+
+2 – CLASSE CARRO
+OBJETO
+ATRIBUTOS:
+	 - Modelo: Uno
+	- Cor: Branco
+	- Potência(cvf) = 55
+	- Ano: 2006
+	- Placa: KPO-0001
+	- Portas: 2
+
+MÉTODOS:
+	- Ligar
+	- Desligar
+	- Andar em frente
+	- Andar em ré
+	- Abrir porta-molas
+	- Abrir porta esquerda
+	- Abrir porta direita
+
+
+
+
+
+
+
+
+OBJETOS ABSTRATOS:
+FIGURA GEOMÉTRICA:
+	ATRIBUTOS:
+		- Número de lados: 5
+		- Espessura do contorno: 2mm
+		- Cor do contorno: verde
+		- Preenchido: sim
+		- Cor do preenchimento: Azul
+		-  ngulos internos iguais: SIM
+	MÉTODOS:
+		- Imprimir
+		- Apagar
+		- Copiar
+		- Apagar preenchimento
+		- Preencher
+		- Circunscrever
+		- Aumentar contorno
+		- Afinar contorno
+
+
+
+
+
+
+
+
+
+
+
+CLASSE_CESAR:
+	ATRIBUTOS:
+		- Número de alunos: 50
+		- Turno: Manhã
+		- Número de instrutores: 1
+		- Sala de encontro: 301
+		- Endereço: xxxx
+
+	MÉTODOS
+		- Encerrar
+		- Começar aula
+		- Emitir certificados
+
+
+
+
+
+
+
+
+
+
+
+

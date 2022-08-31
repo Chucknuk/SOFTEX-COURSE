@@ -1,0 +1,19 @@
+mport java.io.serializable		#importando a interface para fazer as serializações
+
+# SERIALIZANDO
+#classe , objeto e método, nessa ordem
+Fileoutputstream arquivoGrav = 
+new fileoutputstream(“C:\Users\juliano\Desktop\saida.dat”)
+
+Objectoutputstream objGravar  =
+new objectoutputstream(arquivoGrav)
+
+objGravar.writeObject(cliente)			#inserindo uma classe “cliente” fictícia
+objGravar.close()				#fechando o arquivo
+
+# DESSERIALIZANDO
+FileInputStream arquivoLeitura = new FileInputStreamc: / saída. Dat”
+ObjectInputStream objLeitura = new ObjectInputStream(aquivoLeitura);
+objLeitura.close()
+arquivoLeitura.close()
+

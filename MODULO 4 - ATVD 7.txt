@@ -1,0 +1,37 @@
+# PROGRAMA PARA CADASTRO DE DADOS BÁSICOS DE UM USUÁRIO.
+# exceções serão usadas para informar se a pessoa não entrou com um CPF/IDADE/RG correto
+ 
+nome = input ("Informe seu nome completo:")
+CPF = input("Informe o seu CPF:")
+while True:
+  try:
+    idade = int(input("Informe a sua idade:"))
+    break
+  except ValueError:
+    print("Opa! Esse não foi um número válido.Tente de novo inserindo apenas números!")
+while True:
+  try:
+    RG = int(input("Informe o seu RG:"))
+    break
+  except ValueError:
+    print("Opa! Esse não foi um número válido.Tente de novo inserindo apenas números!")
+ 
+print("Pronto! Pré-cadastro concluído!")
+print("As informações inseridas foram:")
+print("Nome completo: ",nome)
+print("CPF: ", CPF)
+print("Idade: ", idade)
+print("RG: ", RG)
+ 
+Informe seu nome completo:Juliano Castro de Andrade
+Informe o seu CPF:061.044.584-75
+Informe a sua idade:Vinte e oito
+Opa! Esse não foi um número válido.Tente de novo inserindo apenas números!
+Informe a sua idade:28
+Informe o seu RG:8694862
+Pronto! Pré-cadastro concluído!
+As informações inseridas foram:
+Nome completo:  Hugo Rannyere Barbalho de Santana |Carvalho
+CPF:  012.345.678-90
+Idade:  29
+RG:  123462

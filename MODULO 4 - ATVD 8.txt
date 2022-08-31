@@ -1,0 +1,16 @@
+É um padrão de comportamento com a função de notificar vários objetos sobre mudanças de interesse ocorridas com o objeto que estão observando.
+
+Suponhamos que queremos comprar um determinado produto em uma loja, mas não sabemos quando ele chegará. Assim, o cliente poderia visitar sempre a loja, mas até que o produto esteja disponível, aquelas idas serão em vão.
+No outro lado do problema, a loja poderia ligar para os clientes, ou mandar email sempre que algum produto chegasse. O impasse é que muitos potenciais clientes não estão interessados naquele produto específico. Assim, vemos que a solução passa por atualizar aos clientes apenas sobre os produtos que estes têm interesse em comprar.
+
+Chamemos o objeto que informará os clientes de publicador e os objetos interessados na mudança de algum evento os assinantes.
+
+O padrão OBSERVER sugere que façamos um mecanismo de assinatura para que os assinantes possam assinar e receber um ou mais eventos fornecidos pelo publicador. Em programação, isso consiste em um vetor para armazenar a lista de referências aos objetos do assinante e alguns métodos públicos que permitem adicionar ou remover assinantes da lista.
+
+
+ANALOGIA COM O MUNDO REAL:
+Ao assinarmos uma revista, não precisamos nos deslocar até a banca para ver se a edição está disponível (até pq hoje em dia às vezes nem tem a revista impressa sr). A publicadora mandará as novas edições diretamente para a caixa de correio, em caso de haver edição impressa, ou para o email, em caso de revista digital.
+A publicadora deve ter uma lista de assinantes e saber quais os produtos que eles têm interesse, de forma que não mandem notificações/produtos indevidas para outros clientes.
+
+Referência bibliográfica:
+REFACORING.GURU.,2022. Observer. Disponível emhttps://refactoring.guru/pt-br/design-patterns/observer. Acessado em 27 de julho de 2022.

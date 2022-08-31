@@ -1,0 +1,40 @@
+#ENTRADA DE DADOS INCIAL
+while True:
+ 
+  print("Lista de operações:")
+ 
+  print("1: Soma")
+  print("2: Subtração")
+  print("3: Multiplicação")
+  print("4: Divisão")
+  print("0: Sair")
+ 
+  operacao = float(input("Informe o número de acordo com a operação desejada:"))
+ 
+  if operacao<0 or operacao>4:            #CONDICIONAIS
+    print("Essa opção não existe!")
+    continue                              #fazemos o programa voltar ao início assim
+ 
+  else:                                   #fazendo continuar caso o usuário insira uma opção válida
+    n1 = float(input("Insira o primeiro valor:"))
+    n2 = float(input("Insira o segundo valor:"))
+ 
+    if operacao == 1:
+      res = n1+n2
+      print("O resultado da operação é " + str(res))
+      
+    elif operacao == 2:
+      res = n1-n2
+      print("O resultado da operação é " + str(res))
+ 
+    elif operacao == 3:
+      res = n1*n2
+      print("O resultado da operação é " + str(res))
+ 
+    elif operacao == 4:
+      res = n1/n2
+      print("O resultado da operação é " + str(res))
+ 
+    elif operacao == 0:
+      print("O usuário optou por sair do programa")
+      break                  #fazendo o while encerrar caso o usuário opte pela saída do programa
